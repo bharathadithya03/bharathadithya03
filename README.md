@@ -303,18 +303,6 @@ An optimized security tool generating robust, custom-length passwords utilizing 
 
 ---
 
-## 🐍 Contribution Activity
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bharathadithya03&bg_color=1a1b27&color=70a5fd&line=70a5fd&point=44475a&area=true&hide_border=true" width="100%" alt="GitHub Activity Graph" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/bharathadithya03/bharathadithya03/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
-</p>
-
----
-
 <p align="center">
   <i>"The best way to predict the future is to invent it." — Alan Kay</i><br/>
   <b>Driven by curiosity, building the future of Artificial Intelligence.</b>
