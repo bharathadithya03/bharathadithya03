@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 880" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    
+    <!-- Moving Ambient Radial Glows -->
+    <radialGradient id="glow-grad-1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow-grad-2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.048" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Moving scanline gradient -->
+    <linearGradient id="scanline-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0" />
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </linearGradient>
+    
+    <!-- Border Shimmer Gradients -->
+    <linearGradient id="border-shimmer-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4">
+        <animate attributeName="stop-color" values="#06B6D4;#2563EB;#7C3AED;#06B6D4" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#2563EB">
+        <animate attributeName="stop-color" values="#2563EB;#7C3AED;#06B6D4;#2563EB" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#06B6D4;#2563EB;#7C3AED" dur="10s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    
+    <!-- Glass Sheen Sweep -->
+    <linearGradient id="sheen-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.06" />
+      <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    
+    <!-- ASCII Shifting Gradient -->
+    <linearGradient id="ascii-glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4">
+        <animate attributeName="stop-color" values="#06B6D4;#2563EB;#7C3AED;#06B6D4" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#2563EB">
+        <animate attributeName="stop-color" values="#2563EB;#7C3AED;#06B6D4;#2563EB" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#06B6D4;#2563EB;#7C3AED" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Noise Filter -->
+    <filter id="noise-filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.035 0" />
+    </filter>
+    
+    <!-- Terminal content clip path -->
+    <clipPath id="terminal-clip">
+      <rect x="20" y="20" width="760" height="840" rx="16" />
+    </clipPath>
+    
+    <!-- ASCII loading reveal clip path -->
+    <clipPath id="reveal-clip">
+      <rect x="20" y="58" width="760" height="0">
+        <animate attributeName="height" values="0;720" dur="3.5s" fill="freeze" begin="0.5s" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .monospace {
+      font-family: "Fira Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+    }
+    
+    .bg-main {
+      fill: url(#bg-grad);
+    }
+    .particle {
+      fill: #06B6D4;
+    }
+    .canvas-border {
+      stroke: rgba(15, 23, 42, 0.08);
+      fill: none;
+    }
+    
+    /* Panel styling */
+    .terminal-bg {
+      fill: #F8FAFC;
+      fill-opacity: 0.85;
+      stroke: rgba(15, 23, 42, 0.08);
+      stroke-width: 1.5;
+      filter: drop-shadow(0 15px 35px rgba(15, 23, 42, 0.05));
+    }
+    .terminal-bg-shimmer {
+      fill: none;
+      stroke: url(#border-shimmer-grad);
+      stroke-width: 1.5;
+      opacity: 0.6;
+    }
+    
+    /* Window Controls */
+    .win-close { fill: #EF4444; }
+    .win-min { fill: #F59E0B; }
+    .win-max { fill: #10B981; }
+    .win-title {
+      fill: #475569;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    
+    /* ASCII Portrait */
+    .ascii-text-group {
+      transform-origin: 380px 420px;
+    }
+    .ascii-text {
+      font-size: 12.6px;
+      line-height: 5.7px;
+      fill: url(#ascii-glow-grad);
+      text-anchor: middle;
+      font-weight: 600;
+      white-space: pre;
+    }
+    
+    /* Prompts */
+    .prompt-text {
+      font-size: 13px;
+      font-weight: 500;
+      fill: #475569;
+    }
+    .status-text {
+      font-size: 13px;
+      font-weight: 700;
+      fill: #7C3AED;
+      letter-spacing: 0.02em;
+    }
+    
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Main Canvas Background -->
+  <rect width="800" height="880" rx="24" class="bg-main" />
+
+  <!-- Ambient Glows -->
+  <circle cx="250" cy="250" r="400" fill="url(#glow-grad-1)">
+    <animate attributeName="cx" values="250;450;200;250" dur="20s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="250;500;400;250" dur="20s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="550" cy="650" r="450" fill="url(#glow-grad-2)">
+    <animate attributeName="cx" values="550;350;600;550" dur="24s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="650;450;700;650" dur="24s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Noise Overlay -->
+  <rect width="800" height="880" rx="24" filter="url(#noise-filter)" pointer-events="none" />
+
+  <!-- Particles -->
+  
+    <circle cx="662" cy="646" r="1.9" class="particle" opacity="0">
+      <animate attributeName="cy" values="646;546" dur="9.4s" begin="-3.7s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="9.4s" begin="-3.7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="370" cy="492" r="1.8" class="particle" opacity="0">
+      <animate attributeName="cy" values="492;392" dur="8.2s" begin="-5.0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="8.2s" begin="-5.0s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="430" cy="309" r="1.9" class="particle" opacity="0">
+      <animate attributeName="cy" values="309;209" dur="11.2s" begin="-1.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="11.2s" begin="-1.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="465" cy="750" r="1.5" class="particle" opacity="0">
+      <animate attributeName="cy" values="750;650" dur="6.4s" begin="-3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="6.4s" begin="-3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="386" cy="513" r="1.5" class="particle" opacity="0">
+      <animate attributeName="cy" values="513;413" dur="10.4s" begin="-1.6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="10.4s" begin="-1.6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="48" cy="461" r="1.7" class="particle" opacity="0">
+      <animate attributeName="cy" values="461;361" dur="8.8s" begin="-4.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="8.8s" begin="-4.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="351" cy="719" r="1.5" class="particle" opacity="0">
+      <animate attributeName="cy" values="719;619" dur="7.6s" begin="-1.0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="7.6s" begin="-1.0s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="98" cy="753" r="1.6" class="particle" opacity="0">
+      <animate attributeName="cy" values="753;653" dur="9.7s" begin="-2.9s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="9.7s" begin="-2.9s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="74" cy="173" r="1.5" class="particle" opacity="0">
+      <animate attributeName="cy" values="173;73" dur="9.9s" begin="-3.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="9.9s" begin="-3.1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="721" cy="117" r="1.8" class="particle" opacity="0">
+      <animate attributeName="cy" values="117;17" dur="7.2s" begin="-1.4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="7.2s" begin="-1.4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="493" cy="682" r="1.4" class="particle" opacity="0">
+      <animate attributeName="cy" values="682;582" dur="10.8s" begin="-3.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="10.8s" begin="-3.1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="472" cy="685" r="1.9" class="particle" opacity="0">
+      <animate attributeName="cy" values="685;585" dur="9.3s" begin="-3.9s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="9.3s" begin="-3.9s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="598" cy="761" r="1.4" class="particle" opacity="0">
+      <animate attributeName="cy" values="761;661" dur="11.3s" begin="-3.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="11.3s" begin="-3.1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="215" cy="641" r="1.6" class="particle" opacity="0">
+      <animate attributeName="cy" values="641;541" dur="7.1s" begin="-3.3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="7.1s" begin="-3.3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="536" cy="697" r="1.5" class="particle" opacity="0">
+      <animate attributeName="cy" values="697;597" dur="11.4s" begin="-4.0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="11.4s" begin="-4.0s" repeatCount="indefinite" />
+    </circle>
+
+  <!-- Left Terminal Panel Container with Floating Animation -->
+  <g>
+    <animateTransform attributeName="transform" 
+                      type="translate" 
+                      values="0,0; 0,-10; 0,0" 
+                      dur="6s" 
+                      repeatCount="indefinite" 
+                      calcMode="spline"
+                      keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" />
+                      
+    <!-- Main glass terminal panel -->
+    <rect x="20" y="20" width="760" height="840" rx="16" class="terminal-bg" />
+    
+    <!-- Shimmer border layer -->
+    <rect x="20" y="20" width="760" height="840" rx="16" class="terminal-bg-shimmer" />
+
+    <!-- Terminal Header -->
+    <circle cx="45" cy="38" r="5.5" class="win-close" />
+    <circle cx="60" cy="38" r="5.5" class="win-min" />
+    <circle cx="75" cy="38" r="5.5" class="win-max" />
+    <text x="380" y="42" text-anchor="middle" class="win-title monospace">portrait_monitor.sh</text>
+    <line x1="20" y1="58" x2="780" y2="58" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    
+    <!-- Moving glass reflection sweep -->
+    <rect x="-760" y="20" width="760" height="840" fill="url(#sheen-grad)" clip-path="url(#terminal-clip)" opacity="0.4" pointer-events="none">
+      <animate attributeName="x" values="-760;1000" dur="6s" repeatCount="indefinite" begin="0.5s" />
+    </rect>
+
+    <!-- Scanline inside terminal -->
+    <rect x="20" y="58" width="760" height="15" fill="url(#scanline-grad)" opacity="0.25" pointer-events="none">
+      <animate attributeName="y" values="58;838;58" dur="7s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- ASCII Art Portrait -->
+    <g class="ascii-text-group monospace">
+      <text x="380" y="90" class="ascii-text" clip-path="url(#reveal-clip)">
+        <tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                                                                          </tspan><tspan x="380" dy="5.7px">                                      #%%#+*                                              </tspan><tspan x="380" dy="5.7px">                                   #*+*WW@%%%%                                            </tspan><tspan x="380" dy="5.7px">                                  %@%@#W▓▓▒%@W@                                           </tspan><tspan x="380" dy="5.7px">                                  #WW▓WW█▒▒%▒█▒M                                          </tspan><tspan x="380" dy="5.7px">                                 #WW▓▓▒MM@▓▓▓▓█▒                                          </tspan><tspan x="380" dy="5.7px">                                *@▓▓▓█▓MM▓███▓▓▓M                                         </tspan><tspan x="380" dy="5.7px">                                #M█▓█▓▓▓▓▓▓▓▓▓▓█W                                         </tspan><tspan x="380" dy="5.7px">                               MMW▓▓▓█▓▓████▓▒██▓%                                        </tspan><tspan x="380" dy="5.7px">                               ▒WW▓██▓M%@MMW▓▒▓▓▓M                                        </tspan><tspan x="380" dy="5.7px">                               @W▓▓WW#*+++++@▓▓▓▓▒@                                       </tspan><tspan x="380" dy="5.7px">                               @W▓%===++++===W█▒▒▓▓                                       </tspan><tspan x="380" dy="5.7px">                               @WW+--===+==-=*▒▓▓▒▒                                       </tspan><tspan x="380" dy="5.7px">                                WM=----===--==M█▓M                                        </tspan><tspan x="380" dy="5.7px">                                W@--=-----:::-%█▒                                         </tspan><tspan x="380" dy="5.7px">                                W*:*MM%+--=+*=*▓▓                                         </tspan><tspan x="380" dy="5.7px">                                W=-=*@M#=#WW%#=▒▓                                         </tspan><tspan x="380" dy="5.7px">                                M==#@@#*=#@@#++W                                          </tspan><tspan x="380" dy="5.7px">                                M=*+#%#+=*%W%#*W                                          </tspan><tspan x="380" dy="5.7px">                               *%===+**#-*%#*++@                                          </tspan><tspan x="380" dy="5.7px">                               *=:---==*.+=+=-+*#                                         </tspan><tspan x="380" dy="5.7px">                               *=:-+==*-:-+==--+*                                         </tspan><tspan x="380" dy="5.7px">                               *+::-=+==-==+---+#                                         </tspan><tspan x="380" dy="5.7px">                               #*::---=%*#--::-*#                                         </tspan><tspan x="380" dy="5.7px">                                =-----*▒▒▒+.--=*                                          </tspan><tspan x="380" dy="5.7px">                                ==--=@M%#@M#--+*                                          </tspan><tspan x="380" dy="5.7px">                                 ==-%▒#***%▓#=*+                                          </tspan><tspan x="380" dy="5.7px">                                 ===#%====+M@=*                                           </tspan><tspan x="380" dy="5.7px">                                  ==+=-*%%=+*+                                            </tspan><tspan x="380" dy="5.7px">                                  *+++=+%#=++%                                            </tspan><tspan x="380" dy="5.7px">                                 #*M%#*##***%%                                            </tspan><tspan x="380" dy="5.7px">                                 @=#▒WMMMMMWM%**                                          </tspan><tspan x="380" dy="5.7px">                                @@==#W▓▓▓▓▓@*W%+#@*                                       </tspan><tspan x="380" dy="5.7px">                               M%W+=++#MM@*=#▒▒%MM*++                                     </tspan><tspan x="380" dy="5.7px">                             ▓▒%MW%=++=+=-==%▓▒MM*%*+=+                                   </tspan><tspan x="380" dy="5.7px">                            ▓WW@▒WM++===--+=M█MM%*##**+=                                  </tspan><tspan x="380" dy="5.7px">                           ▒▒▒▓MWW▒#====-==+▒▓M@@@%@%%#==                                 </tspan><tspan x="380" dy="5.7px">                          MW▓▒█MW▒▒@+======#▓▓▓W▒%MWM@%**+                                </tspan><tspan x="380" dy="5.7px">                         @%▒▓▓█MM▓▒W*===-=+M█▓▓▒M%▒▒WWM%#+                                </tspan><tspan x="380" dy="5.7px">                       *#@M▒▓▓▓W@▓▒▒%+====*▓▓▓▓M*M▒▓▒▒W@#*+                               </tspan><tspan x="380" dy="5.7px">                      +*%MW▒▓▓▓▒@▓▓▓@*+=+=@▓▓█▓#%▒▒▓W▒▒W@%+                               </tspan><tspan x="380" dy="5.7px">                     **%@WW▒▓▓▓▓#▒▓▓M*+==+W▓▒▒▒#W▒▒▓▒▒▒▒M@#+                              </tspan><tspan x="380" dy="5.7px">                    **M%@WW▒▓▓▓▓W▓▓▓▒*===#▒▒▒@@@▓▒▒▓▒▒▓▓▒M%*+                             </tspan><tspan x="380" dy="5.7px">                    #@WWWW▒▒▓▓▓▓▓W█▓▓M-=+#M▒▓W@W▓▒▓▒▒▓▓▓▓W@#+                             </tspan><tspan x="380" dy="5.7px">                   %MMM▒▓W▒▒▒▓▓▒▓▒▓▓▓▓@-+#@W▓%W▒▓▓▓▒▒▓▓▓▓▒M%*=                            </tspan><tspan x="380" dy="5.7px">                   @WWM▒▓▓▒▒▒▓▒▒▓▓▓▓▓▓█▒##%▒▓%W▓▓▓▓▒▒▓▓▓▓▒W@#=                            </tspan><tspan x="380" dy="5.7px">                   @MWW▒▓▓▒▒▒▒▒▒▒▓▓█▓█▓█W#@▒▒@W▓▓▓▓▒▒▓▓▒▓▒WM#==                           </tspan><tspan x="380" dy="5.7px">                   @M▒▒▒▒█▓▒▓▒▒▒▒▓▓▓▓▓█▓▓@M▒▓M▒▓▓▓▓▒▓▓▓▒▓▓W##*=+                          </tspan><tspan x="380" dy="5.7px">                  %MWW▒▒▒▓▓▒▒▒▒▒▒▓▓▓█▓▓▓▓▒W▒▓@▒▓▓▓▓▓▓▓▓▓█▓▒WW%*=                          </tspan><tspan x="380" dy="5.7px">                  @W▒M▒▒▒▓█▒▒▒WW▒▒▓▒▓▓▓▓█▓▒▒▓%▒▓▓▓▒▓▓▓▓▓█▓▓▒@%*+=                         </tspan><tspan x="380" dy="5.7px">                  @W▒W▒▒▒▒█▓W▒WW▒▒▓▒▒█▓▒▓▓▓▓▓@▓▓▓▓▒▓▓▓▓▓█▓▓WM@#+==                        </tspan><tspan x="380" dy="5.7px">                 %MW▒▒▒▒W▒▓▓WWWWW▒▒▓W▓█▓▒W▓▓▓M▓▓▓▓▓▓▓▓▒▓█▓▓▓WM#*+=                        </tspan><tspan x="380" dy="5.7px">                 @MWW▒▒▒▒▒▓▓▒WWWW▒▒▒MW█▓▒▓▓▓▓@▓▓▓▓▓▓▓▓▓██▓▓▓▒W@#*==                       </tspan><tspan x="380" dy="5.7px">                 WMWWWW▒▓▓▓▓▒WWWWWW▒▒@▓▓▓█▓▓▓M▓▓▓▓▓▓█▓▓██▓▓▓▒▓M%#*=                       </tspan><tspan x="380" dy="5.7px">                 ▒WWWWWW▒▓▓█▓▒▒WWW▒▓▓MW▓▓▓▓▓▓@▓▓▓▓▓▓█▓▓███▓▓▓▓W%##*+#                     </tspan><tspan x="380" dy="5.7px">                 W▒WW▒WWW▒▓█▓▓▓▓▓▒▓█▓M%█▓▓▓▓▓M▓▓▓▓▓▓▓▓▓███▓▓▒▒▒▒▓▓▒▒▓W                    </tspan><tspan x="380" dy="5.7px">                 @W▒▒▒▒▒WW▓█▓██▓▓▓█▓▓▓M▒▓▓▓▓▓M▓▓▓▓▓▓▓▓▓███▓▓▓████▒W▓W▒▓                   </tspan><tspan x="380" dy="5.7px">                 MW▒▒▒▒▒▒W▓███▓▒▓██▓▓█MM▓▓▓▓▓W▓▓▓▓▓▓▓▓▓▓█████▓▓▓▓▒▒▒▓▒▒▓                  </tspan><tspan x="380" dy="5.7px">                 MW▒▒▒▒W▓▒▓██▓▓▓▓▓▓▓█▓▒@▓▒▒▓▓▒▓▓▓▓▓█▓▓  ▓██████▓▓▓▒▓%++M                  </tspan><tspan x="380" dy="5.7px">                 M▒W▒▓▒W▒▒▒███▓▓▓▓▓█▓▓▓MWW▒▓▓▒▓▓▓▓▓▓▓▓   ▓██████▓▓▒@+--+                  </tspan><tspan x="380" dy="5.7px">                 M▒WW▒▓W▒▒▒▓██▓█▓▓▓▓▓▓▓▒M▓▓█▓▒▓▓▓▓▓▓▓▓   ▓███████▓▒W#+=-*                 </tspan><tspan x="380" dy="5.7px">                 M▒▒WW▒▒W▒▒▓█▓█▓▓▓▒▒▓▓▒▓M▓▓█▓▓▓▓▓▓█▓▓▓    ▓█████▓█W*=====                 </tspan><tspan x="380" dy="5.7px">                 M▒▒▒WW▒WM▒▓██▓▓▓▒▒▒▒▒▓█WW██▓▓▓▓▓▓▓▓▓▓     ▓███▓█M==--====                </tspan><tspan x="380" dy="5.7px">                 M▒▒▒WWW▒WW▓█▓▓▓▒▒WWW▓▓▓█▓▓█▓▓▓▓▓▓▓▓▓▓      ▓███▒*+=++====+               </tspan><tspan x="380" dy="5.7px">                MM▒W▒▒WW▒▒W▓█▓▒▒▒WWW▒▓█▓█▓▓██▓▓▓▓▓▓▓▓▓       ▓█▓M#*%*+##**+*              </tspan><tspan x="380" dy="5.7px">                MWWWW▒WWW▒W▓██▒▒▒WWW▒▓█▓▓▓▓▓▓▓█▓▓█▓▓▓▓        █WM%M*++=#W▒M%              </tspan><tspan x="380" dy="5.7px">                WW▒WWW▒WW▒W▓███▓▒▒▒▒▓▓█▓▓▓▓▓▓▓█▓▓▓▓▓▓▓        ▓▒W▒W@W#**@█▓M              </tspan><tspan x="380" dy="5.7px">                 W▒WWWW▒WW▒▒██████▓▓████▓▓▓▓▓▓▓▓▓▓▓▓▓          M█▓*::@%*#▓▓W              </tspan><tspan x="380" dy="5.7px">                 ▒▒▒WWW▒▒▒▒▓███████████▓▓▓▓█▓▓▓▓▓▓▓▓▓         .%█M::.-M=+▒█▒              </tspan><tspan x="380" dy="5.7px">                 W▓▒WWWWWW▒▓████████▓▓█▓▒W▓█▒▒▓▓▓▓▓▓▓         =%▓=.::.+@#▒█               </tspan><tspan x="380" dy="5.7px">                 M▒▒WWWW▒WW▓█████▓██▓██▓WW▓▓▒▒▓▓▓▓▓▓▓         =@#::.:::#@▓▓               </tspan><tspan x="380" dy="5.7px">                 MW▒▒WWWWWW▒▓██████▓▓█▓WM▒▓█▒W█▓▓▓▓▓▓          =:::::::+▓                 </tspan><tspan x="380" dy="5.7px">                 MMW▒W▒▒▒WW▒█▓▓▓▓▓▓▓▓▓▓▒▒▓█▓▓▒█▓▓▓▓▓           ::..::::+                  </tspan><tspan x="380" dy="5.7px">                 MWMW▒W▒WW▒▓▓▓▓▓▓▓▓▓▓▒▓▓▓▓█▒▓▒▓▓▓▓▓█          -::..::--                   </tspan><tspan x="380" dy="5.7px">                 WWWMW▒▒▒▓▒▓▓████▓▓▓▓▓█▓█▓▓▓W▒▓▓▓██▓          -:.:::-=-                   </tspan><tspan x="380" dy="5.7px">                 WWWWW▓▓▓▓▓▓█████▓▓▓██▓▓▓▓██WW▒▓███▓          -..:::-=-                   </tspan><tspan x="380" dy="5.7px">                 MWWW▒▒▒▒▓▓▓████▓▓▓▓▓▓▒W▓▓█▓W▒▓████▓         +-=-:::---                   </tspan><tspan x="380" dy="5.7px">                 @M▒▓▓▓▓▓▓▒▓█▓▓▓██▓▓▓▓▓▒▓█▓▓▓%=▓███▓         ==**+----:                   </tspan><tspan x="380" dy="5.7px">                 @▓█▓▓▓▓▓▓▓▒▓█▓▓▓▓▓▓▓▓▓▓▓▓█▓#.=W█▓█▓         ==+**==--:                   </tspan><tspan x="380" dy="5.7px">                 W█▒▒▓▒▒▒▒▒WW▓▓▓▓▓▓▓▓▓▓▓▓▓W===+#█▓█▓         -=+#+=+==:                   </tspan><tspan x="380" dy="5.7px">                 ▓▓▒▓▒WMMMMMW▒█▓███▓▓█▓W▒# :=+==▓██▓         =++#+++=+=                   </tspan><tspan x="380" dy="5.7px">                 ▓▒W▒W▒WWM@MMW▓█▓█▓▓▓▓▒▒#   +#+=M█▓▓         ++*#+*+++-                   </tspan><tspan x="380" dy="5.7px">                 ▒W▒▒▒WWWM@@@MW▓█▓█▓▓▓▒▓@:.-@%%*#█▓▓        +*+%*+#+#=                    </tspan><tspan x="380" dy="5.7px">                 ▒WWWWWWWM@@@@M▒▓█████▓██*=#@#*+-▒█▓        **#%+**+#+                    </tspan><tspan x="380" dy="5.7px">                  MWW▒▒WWMMMM@@@@W█▓███▓█M+@@--+:%█▓        **%#+#+%*+                    </tspan><tspan x="380" dy="5.7px">                  MWW▒▒▒WWWM@@@@@M▒██▓██▓▒*%%=-+:-▓            ###+#+                     </tspan><tspan x="380" dy="5.7px">                   W▒WW▒▒▒WM@MMM@M▒▓▓█▓▒▒▒#*@=:=-:@               #*                      </tspan><tspan x="380" dy="5.7px">                    W▒▒▒▓▒WMMWWMM@W██W@MMW%#@+:=-.#▓                                      </tspan><tspan x="380" dy="5.7px">                   ▓▒WW▒WWWWWWMWW@M▓@##+#WW#@%-:..=▒▓▓                                    </tspan><tspan x="380" dy="5.7px">                   ▓█▒▒▒WWW▒WW▒@+-+#**+*#M▓%%#:...:M▓M#**                                 </tspan><tspan x="380" dy="5.7px">                  M▓M█▓▒▒▒▓▒▒▒%=--::+###%M▓M%- .. .*▒@@%*                                 </tspan><tspan x="380" dy="5.7px">                  W▒%▒▓▓▓▓▓▓W*++==-:.+###@▓▒%=   .=-=:=*#%                                </tspan><tspan x="380" dy="5.7px">                 W▓▒%+*M▓██▓#**+++=-:.=+*%▒▓M+..:==::-:::=                                </tspan><tspan x="380" dy="5.7px">                  ▓W+---+*#@M%****+=-:.-*#M▓▒*:-=-:==:....:                               </tspan><tspan x="380" dy="5.7px">                  ▓#-::::...+M@##**+=-:::*%@@+++:-+=:......=                              </tspan><tspan x="380" dy="5.7px">                  ▒=:::::::..-M@##***+--+=+%*#=:=*-:.::--::===                            </tspan><tspan x="380" dy="5.7px">                 W*:::::::::..=W@####*==+::=#@=+#-::-==:. :==--                           </tspan><tspan x="380" dy="5.7px">                 #=:::::::.::::%▓@%###+*+-::=*##---++=:.. :--=--                          </tspan><tspan x="380" dy="5.7px">                 %=::::::..::-==#▒W@%*%*==-::-+==+*+-...:::---=--                         </tspan><tspan x="380" dy="5.7px">                  =::::::.....:-=M▓▒M##*+=-::.:-*#=:.:---:::---=--                        </tspan><tspan x="380" dy="5.7px">                  -::::::........*▒▓M%#+*+=-::..--:-=+=:..::----=--                       </tspan><tspan x="380" dy="5.7px">                  -:::::.........:#▒%=%++*++-::..:+*+=:..:-----=-=---                     </tspan><tspan x="380" dy="5.7px">                  ::::::..........-@W==++*+++--::::=-:.:-==-:----==---                    </tspan><tspan x="380" dy="5.7px">                  ::::::.......::-:*M#-+++*++++-::-::-=++=-::-=====-=:.                   </tspan><tspan x="380" dy="5.7px">                  -::::::........:-=%*+++***+*++::=-=**+-::-====----=: .                  </tspan><tspan x="380" dy="5.7px">                  -:::::::........:-##-#%+***+**+-+--+=::=++=--------:...                 </tspan><tspan x="380" dy="5.7px">                  -::::::........:::*%-%▒+***+++*+++:-==**+=::======-......               </tspan><tspan x="380" dy="5.7px">                  -:::::.........:---#=W█#+*+++=*++#--*#*====+======-:......              </tspan><tspan x="380" dy="5.7px">                  -:::::..........:-=+*▓█W**++++**=#=:+*==+*++======-:::::...             </tspan><tspan x="380" dy="5.7px">                  -::::::........:::-+W█▓█@+***++#=**-=***++==-======-::::::..            </tspan>
+      </text>
+    </g>
+    
+    <!-- Glowing Laser Scanline Reveal Line -->
+    <rect x="20" y="58" width="760" height="2" fill="#06B6D4" opacity="0.8">
+      <animate attributeName="y" values="58;780" dur="3.5s" fill="freeze" begin="0.5s" />
+      <animate attributeName="opacity" values="0.8;0.8;0" keyTimes="0;0.95;1" dur="3.7s" fill="freeze" begin="0.5s" />
+    </rect>
+
+    <!-- Terminal Status Command Prompt -->
+    <g class="monospace">
+      <!-- Prompt Line -->
+      <text x="45" y="785" class="prompt-text" opacity="0">
+        bharath@ai-terminal:~$
+        <animate attributeName="opacity" values="0;1" dur="0.2s" begin="4.1s" fill="freeze" />
+      </text>
+      <!-- Status Output Line -->
+      <text x="45" y="810" class="status-text" opacity="0">
+        &gt;&gt; STATUS: ONLINE
+        <animate attributeName="opacity" values="0;1" dur="0.2s" begin="4.4s" fill="freeze" />
+      </text>
+      <!-- Blinking Cursor -->
+      <rect x="185" y="797" width="8" height="15" fill="#7C3AED" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.99;1;1" dur="4.4s" fill="freeze" />
+        <animate attributeName="visibility" values="visible;hidden;visible" dur="1s" repeatCount="indefinite" begin="4.5s" />
+      </rect>
+    </g>
+  </g>
+
+  <!-- Outer border -->
+  <rect x="1" y="1" width="798" height="878" rx="23" class="canvas-border" stroke-width="1.5" />
+</svg>
