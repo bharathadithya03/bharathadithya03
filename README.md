@@ -1,5 +1,5 @@
 
-# Nakka Bharath Adithya - AI Engineer & Full Stack AI Developer
+ AIML Enthusiast | Generative AI | #Building Intelligent AI Systems for the Future | From Data to Intelligence — Building AI That Matters
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorStart=6366f1&customColorEnd=a855f7&height=260&section=header&text=Nakka%20Bharath%20Adithya&fontSize=42&fontAlignY=35&animation=twinkling" width="100%"/>
@@ -302,6 +302,12 @@ An optimized security tool generating robust, custom-length passwords utilizing 
 </p>
 
 ---
+<p align="center">
+  <img src="https://raw.githubusercontent.com/bharathadithya03/bharathadithya03/main/Banner.svg" width="100%" alt="Bharath Adithya GitHub Banner"/>
+</p>
+
+---
+
 
 <p align="center">
   <i>"The best way to predict the future is to invent it." — Alan Kay</i><br/>
