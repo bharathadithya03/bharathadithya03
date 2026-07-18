@@ -253,7 +253,7 @@ An optimized security tool generating robust, custom-length passwords utilizing 
 *   Refined prompt-response pairs to optimize instruction-following capabilities of state-of-the-art LLMs.
 
 #### **AI Developer Intern** | Infosys Springboard 7.0 Project
-**Infosys Springboard** | *2024*
+**Infosys Springboard** | *2026*
 *   Successfully engineered and launched **PricePilot AI**, a dynamic pricing optimization model.
 *   Integrated predictive machine learning algorithms (XGBoost) with a robust FastAPI backend.
 *   Created data visualization dashboards translating forecasting statistics into actionable business insights.
