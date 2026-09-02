@@ -331,4 +331,4 @@ An optimized security tool generating robust, custom-length passwords utilizing 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorStart=6366f1&customColorEnd=a855f7&height=120&section=footer&text=Keep%20Coding%20%7C%20Keep%20Innovating&fontSize=22&fontAlignY=50" width="100%"/>
 </p>
-```
+
