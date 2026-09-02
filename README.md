@@ -158,35 +158,7 @@ An enterprise-ready markdown translation and optimization library that extracts 
 </details>
 
 <details>
-<summary><b>📈 2. PricePilot AI — Dynamic Pricing Optimization & Revenue Intelligence</b></summary>
-<br/>
-
-A state-of-the-art predictive pricing solution leveraging real-time demand forecasting and price elasticity machine learning algorithms to maximize revenue margins.
-
-*   **Core Tech Stack:** `Python`, `FastAPI`, `React`, `PostgreSQL`, `Scikit-Learn`, `XGBoost`
-*   **Scale:** Capable of processing high-velocity product streams with concurrent request handling.
-*   **Performance:** Sub-15ms model inference latency optimized using pre-compiled ML pipelines.
-*   **Security:** Role-Based Access Control (RBAC) and OAuth2 authentication securing administrative endpoints.
-*   **Impact:** Achieved a simulated 12% revenue growth margin by automating price changes based on market volatility index.
-*   **GitHub Repository:** [bharathadithya03/pricepilot-ai](https://github.com/bharathadithya03)
-</details>
-
-<details>
-<summary><b>💼 3. CRM for Public Transport Management — Salesforce Enterprise App</b></summary>
-<br/>
-
-A comprehensive CRM ticketing and transit administration system configured to streamline customer inquiries, transit rules, and routing audits.
-
-*   **Core Tech Stack:** `Salesforce CRM`, `Apex`, `Lightning Web Components (LWC)`, `Process Automation`
-*   **Scale:** Supports hundreds of daily concurrent public transit cases and route logs.
-*   **Performance:** Bulkified Apex triggers and optimal SOQL query designs avoiding Salesforce governor limit bottlenecks.
-*   **Security:** Strict field-level security (FLS), sharing rules, and encrypted database attributes protecting citizen records.
-*   **Impact:** Decreased transit case response dispatch overhead times by 40% using automated case assignments.
-*   **GitHub Repository:** [bharathadithya03/salesforce-transport-crm](https://github.com/bharathadithya03)
-</details>
-
-<details>
-<summary><b>📄 4. ResumeX AI — ATS Resume Analysis & Match Evaluator</b></summary>
+<summary><b>📄 2. ResumeX AI — ATS Resume Analysis & Match Evaluator</b></summary>
 <br/>
 
 An AI-powered recruitment assistant analyzing resumes against target job descriptions to produce ATS alignment ratings and structural optimization suggestions.
@@ -200,21 +172,34 @@ An AI-powered recruitment assistant analyzing resumes against target job descrip
 </details>
 
 <details>
-<summary><b>📱 5. QR Code Generator — Enterprise QR Utility</b></summary>
-<br/>
+<summary>📧 3. MailOps AI — AI-Powered Email Operations Platform</summary>
 
-A lightweight, high-performance static and dynamic QR code generation service designed for corporate inventory and authentication operations.
+An AI-powered operations platform that converts business emails into controlled, auditable actions through confidence-aware workflows.
 
-*   **Core Tech Stack:** `Python`, `FastAPI`, `React`, `Segno`, `Pillow`
-*   **Scale:** Optimized for on-demand high-throughput SVG and PNG QR generation.
-*   **Performance:** Static caching allows sub-10ms response times for repeat dynamic endpoints.
-*   **Security:** Encrypted payload options and validated redirects to prevent spoofing.
-*   **Impact:** Implemented inside small business environments to track equipment check-ins.
-*   **GitHub Repository:** [bharathadithya03/qr-generator](https://github.com/bharathadithya03)
+- **Core Tech Stack:** Next.js, React, Tailwind CSS, Firebase Auth, Firestore, Gmail API, OAuth, Server-Side Routes
+- **AI Workflow:** Structured AI email classification, confidence scoring, policy-based decision layer, automated action execution
+- **Key Capabilities:** Classifies invoices, payment queries, disputes, and spam; synchronizes Gmail messages; routes low-confidence cases for human review
+- **Security:** User data isolation, OAuth-based Gmail access, controlled action execution, and audit-ready activity tracking
+- **Impact:** Combines AI classification with human-in-the-loop safeguards to enable reliable email automation without sacrificing control or traceability
+
 </details>
 
 <details>
-<summary><b>🎙️ 6. AI Voice Assistant — Voice-Activated Task Executer</b></summary>
+<summary><b>📈 4. PricePilot AI — Dynamic Pricing Optimization & Revenue Intelligence</b></summary>
+<br/>
+
+A state-of-the-art predictive pricing solution leveraging real-time demand forecasting and price elasticity machine learning algorithms to maximize revenue margins.
+
+*   **Core Tech Stack:** `Python`, `FastAPI`, `React`, `PostgreSQL`, `Scikit-Learn`, `XGBoost`
+*   **Scale:** Capable of processing high-velocity product streams with concurrent request handling.
+*   **Performance:** Sub-15ms model inference latency optimized using pre-compiled ML pipelines.
+*   **Security:** Role-Based Access Control (RBAC) and OAuth2 authentication securing administrative endpoints.
+*   **Impact:** Achieved a simulated 12% revenue growth margin by automating price changes based on market volatility index.
+*   **GitHub Repository:** [bharathadithya03/pricepilot-ai](https://github.com/bharathadithya03)
+</details>
+
+<details>
+<summary><b>🎙️ 5. AI Voice Assistant — Voice-Activated Task Executer</b></summary>
 <br/>
 
 A responsive desktop and web companion executing commands, translating inputs, and retrieving system tasks via natural language voice queries.
@@ -228,7 +213,35 @@ A responsive desktop and web companion executing commands, translating inputs, a
 </details>
 
 <details>
-<summary><b>🔒 7. Password Generator — Cryptographically Secure Engine</b></summary>
+<summary><b>💼 6. CRM for Public Transport Management — Salesforce Enterprise App</b></summary>
+<br/>
+
+A comprehensive CRM ticketing and transit administration system configured to streamline customer inquiries, transit rules, and routing audits.
+
+*   **Core Tech Stack:** `Salesforce CRM`, `Apex`, `Lightning Web Components (LWC)`, `Process Automation`
+*   **Scale:** Supports hundreds of daily concurrent public transit cases and route logs.
+*   **Performance:** Bulkified Apex triggers and optimal SOQL query designs avoiding Salesforce governor limit bottlenecks.
+*   **Security:** Strict field-level security (FLS), sharing rules, and encrypted database attributes protecting citizen records.
+*   **Impact:** Decreased transit case response dispatch overhead times by 40% using automated case assignments.
+*   **GitHub Repository:** [bharathadithya03/salesforce-transport-crm](https://github.com/bharathadithya03)
+</details>
+
+<details>
+<summary><b>📱 7. QR Code Generator — Enterprise QR Utility</b></summary>
+<br/>
+
+A lightweight, high-performance static and dynamic QR code generation service designed for corporate inventory and authentication operations.
+
+*   **Core Tech Stack:** `Python`, `FastAPI`, `React`, `Segno`, `Pillow`
+*   **Scale:** Optimized for on-demand high-throughput SVG and PNG QR generation.
+*   **Performance:** Static caching allows sub-10ms response times for repeat dynamic endpoints.
+*   **Security:** Encrypted payload options and validated redirects to prevent spoofing.
+*   **Impact:** Implemented inside small business environments to track equipment check-ins.
+*   **GitHub Repository:** [bharathadithya03/qr-generator](https://github.com/bharathadithya03)
+</details>
+
+<details>
+<summary><b>🔒 8. Password Generator — Cryptographically Secure Engine</b></summary>
 <br/>
 
 An optimized security tool generating robust, custom-length passwords utilizing secure entropy generation algorithms.
