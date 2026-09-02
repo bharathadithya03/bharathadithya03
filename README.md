@@ -186,7 +186,7 @@ A comprehensive CRM ticketing and transit administration system configured to st
 </details>
 
 <details>
-<summary><b>📄 4. HireMate AI — ATS Resume Analysis & Match Evaluator</b></summary>
+<summary><b>📄 4. ResumeX AI — ATS Resume Analysis & Match Evaluator</b></summary>
 <br/>
 
 An AI-powered recruitment assistant analyzing resumes against target job descriptions to produce ATS alignment ratings and structural optimization suggestions.
