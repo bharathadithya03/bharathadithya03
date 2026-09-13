@@ -20,7 +20,10 @@
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   <a href="https://bharathadithya03.github.io/portfolio/">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Portfolio-C4B5FD?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Portfolio" />
+</a>
+ <a href="https://www.credly.com/users/bharath-adithya-nakka">
+    <img src="https://img.shields.io/badge/Credly-FF6B35?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" />
   </a>
 </p>
 
@@ -38,11 +41,9 @@ An ambitious and results-driven **Artificial Intelligence and Machine Learning E
   <tr>
     <td align="center" width="150"><b>Languages</b></td>
     <td>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/Python programming-3776AB?style=for-the-badge&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
-      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+      <img src="https://img.shields.io/badge/Java (Basics)-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -64,9 +65,9 @@ An ambitious and results-driven **Artificial Intelligence and Machine Learning E
   </tr>
   <tr>
     <td align="center"><b>Frontend & Styling</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+    <td> 
       <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+      <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
       <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
     </td>
   </tr>
@@ -82,7 +83,7 @@ An ambitious and results-driven **Artificial Intelligence and Machine Learning E
       <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
       <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
       <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-    </td>
+      <img src="https://img.shields.io/badge/Microsoft_365-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white" />   
   </tr>
   <tr>
     <td align="center"><b>Cloud Platforms</b></td>
@@ -253,7 +254,7 @@ An optimized security tool generating robust, custom-length passwords utilizing 
 ## 💼 Work Experience
 
 #### **Data Auditor / AI Data Annotation Auditor** | Process Associate
-**Handigital Private Limited** | *Ongoing*
+**Handigital Private Limited** | May*2026* - *Ongoing*
 *   Audited unstructured text, conversational queries, and tabular datasets to train generative AI models.
 *   Conducted rigorous quality control reviews on annotated data to ensure high fidelity and alignment with project benchmarks.
 *   Analyzed annotation label definitions and collaborated with operations to boost team annotation throughput metrics by 15%.
