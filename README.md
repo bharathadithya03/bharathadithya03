@@ -107,7 +107,7 @@ Learning:
 Building:
   - AI Markdown Engine
   - PricePilot AI
-  - AI SaaS Projects
+  - RAG & AI Agents Projects
 Exploring:
   - Agentic AI
   - Multi-Agent Systems
@@ -117,8 +117,9 @@ Exploring:
 Open To:
   - AI Engineer
   - ML Engineer
+  - AI Evaluation (Evals)
+  - QA Engineer
   - Software Engineer
-  - Full Stack Developer
   - Open Source Collaboration
 ```
 
@@ -154,7 +155,6 @@ An enterprise-ready markdown translation and optimization library that extracts 
 *   **Performance:** Implemented asynchronous document batching, yielding a 90% reduction in average text conversion times.
 *   **Security:** Stateless processing ensuring zero data persistence to comply with private enterprise security standards.
 *   **Impact:** Enhanced downstream Retrieval-Augmented Generation (RAG) vector-database semantic search accuracy by 35% through optimal chunk-boundary preservation and meta-tag injection.
-*   **GitHub Repository:** [bharathadithya03/ai-markdown-engine](https://github.com/bharathadithya03) *(or private repository)*
 </details>
 
 <details>
@@ -168,7 +168,6 @@ An AI-powered recruitment assistant analyzing resumes against target job descrip
 *   **Performance:** Uses asynchronous LLM parsing calls to return detailed alignment metrics in less than 3 seconds.
 *   **Security:** Complete client-side parsing configurations to protect personal applicant metadata.
 *   **Impact:** Enabled applicants to optimize resume design keywords, resulting in a 25% higher candidate match rate.
-*   **GitHub Repository:** [bharathadithya03/hiremate-ai](https://github.com/bharathadithya03)
 </details>
 
 <details>
@@ -195,7 +194,6 @@ A state-of-the-art predictive pricing solution leveraging real-time demand forec
 *   **Performance:** Sub-15ms model inference latency optimized using pre-compiled ML pipelines.
 *   **Security:** Role-Based Access Control (RBAC) and OAuth2 authentication securing administrative endpoints.
 *   **Impact:** Achieved a simulated 12% revenue growth margin by automating price changes based on market volatility index.
-*   **GitHub Repository:** [bharathadithya03/pricepilot-ai](https://github.com/bharathadithya03)
 </details>
 
 <details>
@@ -209,7 +207,6 @@ A responsive desktop and web companion executing commands, translating inputs, a
 *   **Performance:** Sub-second loop latency from speech capture to translated command execution.
 *   **Security:** Local audio buffer cleaning policies preventing ambient conversations from being stored.
 *   **Impact:** Streamlined hand-free desktop commands and search shortcuts.
-*   **GitHub Repository:** [bharathadithya03/ai-voice-assistant](https://github.com/bharathadithya03)
 </details>
 
 <details>
@@ -223,7 +220,6 @@ A comprehensive CRM ticketing and transit administration system configured to st
 *   **Performance:** Bulkified Apex triggers and optimal SOQL query designs avoiding Salesforce governor limit bottlenecks.
 *   **Security:** Strict field-level security (FLS), sharing rules, and encrypted database attributes protecting citizen records.
 *   **Impact:** Decreased transit case response dispatch overhead times by 40% using automated case assignments.
-*   **GitHub Repository:** [bharathadithya03/salesforce-transport-crm](https://github.com/bharathadithya03)
 </details>
 
 <details>
@@ -237,7 +233,6 @@ A lightweight, high-performance static and dynamic QR code generation service de
 *   **Performance:** Static caching allows sub-10ms response times for repeat dynamic endpoints.
 *   **Security:** Encrypted payload options and validated redirects to prevent spoofing.
 *   **Impact:** Implemented inside small business environments to track equipment check-ins.
-*   **GitHub Repository:** [bharathadithya03/qr-generator](https://github.com/bharathadithya03)
 </details>
 
 <details>
@@ -251,14 +246,13 @@ An optimized security tool generating robust, custom-length passwords utilizing 
 *   **Performance:** Sub-millisecond generation times.
 *   **Security:** Pure memory-based operation. Passwords are never saved, tracked, or cached.
 *   **Impact:** Enabled teams to adopt standardized high-entropy system credentials.
-*   **GitHub Repository:** [bharathadithya03/secure-pass-gen](https://github.com/bharathadithya03)
 </details>
 
 ---
 
 ## 💼 Work Experience
 
-#### **Data Auditor / AI Data Annotation Auditor** | Freelancer
+#### **Data Auditor / AI Data Annotation Auditor** | Process Associate
 **Handigital Private Limited** | *Ongoing*
 *   Audited unstructured text, conversational queries, and tabular datasets to train generative AI models.
 *   Conducted rigorous quality control reviews on annotated data to ensure high fidelity and alignment with project benchmarks.
@@ -266,7 +260,7 @@ An optimized security tool generating robust, custom-length passwords utilizing 
 *   Refined prompt-response pairs to optimize instruction-following capabilities of state-of-the-art LLMs.
 
 #### **AI Developer Intern** | Infosys Springboard 7.0 Project
-**Infosys Springboard** | *2026*
+**Infosys Springboard** | June*2026*- Sep*2026*
 *   Successfully engineered and launched **PricePilot AI**, a dynamic pricing optimization model.
 *   Integrated predictive machine learning algorithms (XGBoost) with a robust FastAPI backend.
 *   Created data visualization dashboards translating forecasting statistics into actionable business insights.
@@ -312,6 +306,9 @@ An optimized security tool generating robust, custom-length passwords utilizing 
   </a>
   <a href="https://www.hackerrank.com/profile/bharathadithya03">
     <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank" />
+  </a>
+   <a href="https://www.credly.com/users/bharath-adithya-nakka">
+    <img src="https://img.shields.io/badge/Credly-FF6B35?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" />
   </a>
 </p>
 
