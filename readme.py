@@ -20,9 +20,9 @@
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   <a href="https://bharathadithya03.github.io/portfolio/">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
-  </a>
-   <a href="https://www.credly.com/users/bharath-adithya-nakka">
+  <img src="https://img.shields.io/badge/Portfolio-C4B5FD?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Portfolio" />
+</a>
+ <a href="https://www.credly.com/users/bharath-adithya-nakka">
     <img src="https://img.shields.io/badge/Credly-FF6B35?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" />
   </a>
 </p>
@@ -47,16 +47,24 @@ An ambitious and results-driven **Artificial Intelligence and Machine Learning E
     </td>
   </tr>
   <tr>
-    <td align="center"><b>AI / ML / GenAI</b></td>
+    <td align="center"><b>AI / ML / GenAI / Agent Concepts </b></td>
     <td>
       <img src="https://img.shields.io/badge/Machine%20Learning-3F51B5?style=for-the-badge&logo=analytics&logoColor=white" />
-      <img src="https://img.shields.io/badge/Deep%20Learning-009688?style=for-the-badge&logo=brain&logoColor=white" />
       <img src="https://img.shields.io/badge/Generative%20AI-9C27B0?style=for-the-badge&logo=openai&logoColor=white" />
       <img src="https://img.shields.io/badge/LLMs-673AB7?style=for-the-badge&logo=huggingface&logoColor=white" />
-      <img src="https://img.shields.io/badge/RAG%20Systems-4CAF50?style=for-the-badge&logo=database&logoColor=white" />
-      <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" />
-      <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
-    </td>
+      <img src="https://img.shields.io/badge/RAG-4CAF50?style=for-the-badge&logo=database&logoColor=white" />
+      <img src="https://img.shields.io/badge/LLM%20Evaluation-673AB7?style=for-the-badge&logo=huggingface&logoColor=white" />
+      <img src="https://img.shields.io/badge/RLHF-FF5722?style=for-the-badge&logo=brain&logoColor=white" />
+      <img src="https://img.shields.io/badge/Embeddings-3F51B5?style=for-the-badge&logo=analytics&logoColor=white" />
+      <img src="https://img.shields.io/badge/Vector%20Search-009688?style=for-the-badge&logo=database&logoColor=white" />
+      <img src="https://img.shields.io/badge/Guardrails-F44336?style=for-the-badge&logo=shield&logoColor=white" />
+      <img src="https://img.shields.io/badge/Error%20Taxonomy%20Design-795548?style=for-the-badge&logo=analytics&logoColor=white" />
+      <img src="https://img.shields.io/badge/Consistency%20Scoring-607D8B?style=for-the-badge&logo=analytics&logoColor=white" />
+      <img src="https://img.shields.io/badge/Human--in--the--Loop-2196F3?style=for-the-badge&logo=person&logoColor=white" />
+      <img src="https://img.shields.io/badge/Multi--Agent%20Orchestration-9C27B0?style=for-the-badge&logo=openai&logoColor=white" />
+      <img src="https://img.shields.io/badge/MCP-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" />
+      <img src="https://img.shields.io/badge/Deep%20Learning-009688?style=for-the-badge&logo=brain&logoColor=white" />
+
   </tr>
   <tr>
     <td align="center"><b>Agentic AI Frameworks</b></td>
@@ -70,22 +78,7 @@ An ambitious and results-driven **Artificial Intelligence and Machine Learning E
       <img src="https://img.shields.io/badge/CrewAI-1A1A2E?style=for-the-badge&logo=python&logoColor=white" />
     </td>
   </tr>
-  <tr>
-    <td align="center"><b>GenAI &amp; Agent Concepts</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/RAG-4CAF50?style=for-the-badge&logo=database&logoColor=white" />
-      <img src="https://img.shields.io/badge/LLM%20Evaluation-673AB7?style=for-the-badge&logo=huggingface&logoColor=white" />
-      <img src="https://img.shields.io/badge/RLHF-FF5722?style=for-the-badge&logo=brain&logoColor=white" />
-      <img src="https://img.shields.io/badge/Embeddings-3F51B5?style=for-the-badge&logo=analytics&logoColor=white" />
-      <img src="https://img.shields.io/badge/Vector%20Search-009688?style=for-the-badge&logo=database&logoColor=white" />
-      <img src="https://img.shields.io/badge/Guardrails-F44336?style=for-the-badge&logo=shield&logoColor=white" />
-      <img src="https://img.shields.io/badge/Error%20Taxonomy%20Design-795548?style=for-the-badge&logo=analytics&logoColor=white" />
-      <img src="https://img.shields.io/badge/Consistency%20Scoring-607D8B?style=for-the-badge&logo=analytics&logoColor=white" />
-      <img src="https://img.shields.io/badge/Human--in--the--Loop-2196F3?style=for-the-badge&logo=person&logoColor=white" />
-      <img src="https://img.shields.io/badge/Multi--Agent%20Orchestration-9C27B0?style=for-the-badge&logo=openai&logoColor=white" />
-      <img src="https://img.shields.io/badge/MCP-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" />
-    </td>
-  </tr>
+
   <tr>
     <td align="center"><b>LLMs, AI Tools &amp; Cloud AI Platform</b></td>
     <td>
@@ -98,7 +91,6 @@ An ambitious and results-driven **Artificial Intelligence and Machine Learning E
       <img src="https://img.shields.io/badge/Grok-1D9BF0?style=for-the-badge&logo=twitter&logoColor=white" />
       <img src="https://img.shields.io/badge/DeepSeek-4A90D9?style=for-the-badge&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
-      <img src="https://img.shields.io/badge/Google%20Vertex%20AI-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -122,26 +114,41 @@ An ambitious and results-driven **Artificial Intelligence and Machine Learning E
       <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
       <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
       <img src="https://img.shields.io/badge/Microsoft_365-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white" />   
-    </td>
   </tr>
   <tr>
     <td align="center"><b>Cloud Platforms</b></td>
     <td>
       <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
-      <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
+      <img src="https://img.shields.io/badge/Google%20Vertex%20AI-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
     </td>
   </tr>
 </table>
 
-## 🤝 Professional Skills
+## Professional Skills
 
-- Critical Thinking
-- Problem Solving
-- Decision-Making
-- Communication
-- Teamwork
-- Adaptability
-
+<table>
+  <tr>
+    <td align="center" width="150"><b>Thinking & Decision-Making</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Critical%20Thinking-37474F?style=for-the-badge&logoColor=white" />
+      <img src="https://img.shields.io/badge/Problem%20Solving-455A64?style=for-the-badge&logoColor=white" />
+      <img src="https://img.shields.io/badge/Decision%20Making-546E7A?style=for-the-badge&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Communication & Collaboration</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Communication-37474F?style=for-the-badge&logoColor=white" />
+      <img src="https://img.shields.io/badge/Teamwork-455A64?style=for-the-badge&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Leadership & Workplace Skills</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Adaptability-546E7A?style=for-the-badge&logoColor=white" />
+      <img src="https://img.shields.io/badge/Leadership-546E7A?style=for-the-badge&logoColor=white" />
+  </tr>
+</table>
 ---
 
 ## 🎯 Current Focus
@@ -234,6 +241,7 @@ An AI-powered operations platform that converts business emails into controlled,
 - **Key Capabilities:** Classifies invoices, payment queries, disputes, and spam; synchronizes Gmail messages; routes low-confidence cases for human review
 - **Security:** User data isolation, OAuth-based Gmail access, controlled action execution, and audit-ready activity tracking
 - **Impact:** Combines AI classification with human-in-the-loop safeguards to enable reliable email automation without sacrificing control or traceability
+
 </details>
 
 <details>
@@ -316,7 +324,7 @@ An optimized security tool generating robust, custom-length passwords utilizing 
 - Supported multilingual AI Safety and Guardrails operations through detailed content review, quality checks, and policy-based decision-making across multimodal data.
 
 #### **AI Developer Intern** | Infosys Springboard 7.0 Project
-**Infosys Springboard** |  May*2026* - sep*2026*
+**Infosys Springboard** | June*2026*- Sep*2026*
 *   Successfully engineered and launched **PricePilot AI**, a dynamic pricing optimization model.
 *   Integrated predictive machine learning algorithms (XGBoost) with a robust FastAPI backend.
 *   Created data visualization dashboards translating forecasting statistics into actionable business insights.
@@ -363,7 +371,7 @@ An optimized security tool generating robust, custom-length passwords utilizing 
   <a href="https://www.hackerrank.com/profile/bharathadithya03">
     <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank" />
   </a>
-  <a href="https://www.credly.com/users/bharath-adithya-nakka">
+   <a href="https://www.credly.com/users/bharath-adithya-nakka">
     <img src="https://img.shields.io/badge/Credly-FF6B35?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" />
   </a>
 </p>
@@ -384,4 +392,4 @@ An optimized security tool generating robust, custom-length passwords utilizing 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorStart=6366f1&customColorEnd=a855f7&height=120&section=footer&text=Keep%20Coding%20%7C%20Keep%20Innovating&fontSize=22&fontAlignY=50" width="100%"/>
 </p>
-
+```
