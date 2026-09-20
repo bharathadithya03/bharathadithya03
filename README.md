@@ -56,11 +56,49 @@ An ambitious and results-driven **Artificial Intelligence and Machine Learning E
       <img src="https://img.shields.io/badge/RAG%20Systems-4CAF50?style=for-the-badge&logo=database&logoColor=white" />
       <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" />
       <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
-      <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
-      <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-      <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-      <img src="https://img.shields.io/badge/OpenAI%20APIs-412991?style=for-the-badge&logo=openai&logoColor=white" />
-      <img src="https://img.shields.io/badge/Gemini%20APIs-8E75C2?style=for-the-badge&logo=googlegemini&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Agentic AI Frameworks</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" />
+      <img src="https://img.shields.io/badge/RAG%20Pipelines-4CAF50?style=for-the-badge&logo=database&logoColor=white" />
+      <img src="https://img.shields.io/badge/Prompt%20Engineering-9C27B0?style=for-the-badge&logo=openai&logoColor=white" />
+      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" />
+      <img src="https://img.shields.io/badge/AutoGen-512BD4?style=for-the-badge&logo=microsoft&logoColor=white" />
+      <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" />
+      <img src="https://img.shields.io/badge/CrewAI-1A1A2E?style=for-the-badge&logo=python&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>GenAI &amp; Agent Concepts</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/RAG-4CAF50?style=for-the-badge&logo=database&logoColor=white" />
+      <img src="https://img.shields.io/badge/LLM%20Evaluation-673AB7?style=for-the-badge&logo=huggingface&logoColor=white" />
+      <img src="https://img.shields.io/badge/RLHF-FF5722?style=for-the-badge&logo=brain&logoColor=white" />
+      <img src="https://img.shields.io/badge/Embeddings-3F51B5?style=for-the-badge&logo=analytics&logoColor=white" />
+      <img src="https://img.shields.io/badge/Vector%20Search-009688?style=for-the-badge&logo=database&logoColor=white" />
+      <img src="https://img.shields.io/badge/Guardrails-F44336?style=for-the-badge&logo=shield&logoColor=white" />
+      <img src="https://img.shields.io/badge/Error%20Taxonomy%20Design-795548?style=for-the-badge&logo=analytics&logoColor=white" />
+      <img src="https://img.shields.io/badge/Consistency%20Scoring-607D8B?style=for-the-badge&logo=analytics&logoColor=white" />
+      <img src="https://img.shields.io/badge/Human--in--the--Loop-2196F3?style=for-the-badge&logo=person&logoColor=white" />
+      <img src="https://img.shields.io/badge/Multi--Agent%20Orchestration-9C27B0?style=for-the-badge&logo=openai&logoColor=white" />
+      <img src="https://img.shields.io/badge/MCP-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>LLMs, AI Tools &amp; Cloud AI Platform</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/OpenAI%20GPT-412991?style=for-the-badge&logo=openai&logoColor=white" />
+      <img src="https://img.shields.io/badge/Kimi%20AI-1A73E8?style=for-the-badge&logo=google&logoColor=white" />
+      <img src="https://img.shields.io/badge/Anthropic%20Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white" />
+      <img src="https://img.shields.io/badge/Google%20Gemini-8E75C2?style=for-the-badge&logo=googlegemini&logoColor=white" />
+      <img src="https://img.shields.io/badge/Meta%20Llama-0467DF?style=for-the-badge&logo=meta&logoColor=white" />
+      <img src="https://img.shields.io/badge/Qwen-FF6A00?style=for-the-badge&logo=alibaba&logoColor=white" />
+      <img src="https://img.shields.io/badge/Grok-1D9BF0?style=for-the-badge&logo=twitter&logoColor=white" />
+      <img src="https://img.shields.io/badge/DeepSeek-4A90D9?style=for-the-badge&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+      <img src="https://img.shields.io/badge/Google%20Vertex%20AI-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -93,6 +131,15 @@ An ambitious and results-driven **Artificial Intelligence and Machine Learning E
     </td>
   </tr>
 </table>
+
+## 🤝 Professional Skills
+
+- Critical Thinking
+- Problem Solving
+- Decision-Making
+- Communication
+- Teamwork
+- Adaptability
 
 ---
 
@@ -149,26 +196,31 @@ Open To:
 <summary><b>🚀 1. AI Markdown Engine — Multi-Engine Document Converter & Optimizer</b></summary>
 <br/>
 
-An enterprise-ready markdown translation and optimization library that extracts unstructured text from PDF/Word formats, optimizes tokens for RAG pipelines, and scores output accuracy.
+An enterprise-ready markdown translation and optimization library, processing engine that converts PDF, DOCX, PPTX, XLSX, XLS, HTML, CSV, Markdown, and TXT files into structured and optimized Markdown for downstream LLM and RAG pipelines that extracts unstructured text from PDF/Word formats, optimizes tokens for RAG pipelines, and scores output accuracy.
 
-*   **Core Tech Stack:** `Python`, `FastAPI`, `MarkItDown`, `Docling`, `Tesseract OCR`, `LLMs`
-*   **Scale:** Built to ingest enterprise-grade documents (up to 500+ pages) and convert them to clean chunk-friendly outputs.
-*   **Performance:** Implemented asynchronous document batching, yielding a 90% reduction in average text conversion times.
-*   **Security:** Stateless processing ensuring zero data persistence to comply with private enterprise security standards.
-*   **Impact:** Enhanced downstream Retrieval-Augmented Generation (RAG) vector-database semantic search accuracy by 35% through optimal chunk-boundary preservation and meta-tag injection.
+- **Core Tech Stack:** 'Python', 'FastAPI', 'PyMuPDF', 'python-docx', 'python-pptx', 'openpyxl', 'Next.js', 'React', 'TypeScript', 'chunking', 'Markdown generation', 'Optimization'
+- **Document Pipeline:** Built modular, priority-based conversion engines with format-specific parsing, metadata extraction, and structured Markdown generation.
+- **RAG Preparation:** Implemented structure-aware chunking with heading preservation, safe paragraph boundaries, token estimation, overlap handling, and metadata generation.
+- **Optimization:** Developed deterministic Markdown transformations for whitespace normalization, duplicate removal, boilerplate cleanup, repeated header/footer removal, and structural optimization.
+- **Quality:** Implemented rule-based Markdown quality evaluation covering headings, tables, lists, images, hyperlinks, code blocks, syntax, and completeness.
+- **Architecture:** Shared processing services exposed through both a FastAPI REST API and Python CLI.
+- **Frontend & Deployment:** Built a Next.js/React/TypeScript interface and containerized frontend/backend services using Docker Compose.
+- **Testing:** Added pytest-based tests for converters, optimization, quality evaluation, CLI, and RAG functionality.
+
 </details>
 
 <details>
-<summary><b>📄 2. ResumeX AI — ATS Resume Analysis & Match Evaluator</b></summary>
+<summary><b>📄 2. ResumeX AI — AI Resume Builder & ATS Optimization Platform</b></summary>
 <br/>
 
-An AI-powered recruitment assistant analyzing resumes against target job descriptions to produce ATS alignment ratings and structural optimization suggestions.
+An AI-powered resume platform analyzing resumes against target job descriptions to deliver hybrid ATS scoring, semantic matching, keyword insights, and AI-driven resume optimization.
 
-*   **Core Tech Stack:** `Python`, `FastAPI`, `LangChain`, `OpenAI GPT-4o`, `SpaCy`
-*   **Scale:** Fast concurrent processing allowing multiple bulk resume scans.
-*   **Performance:** Uses asynchronous LLM parsing calls to return detailed alignment metrics in less than 3 seconds.
-*   **Security:** Complete client-side parsing configurations to protect personal applicant metadata.
-*   **Impact:** Enabled applicants to optimize resume design keywords, resulting in a 25% higher candidate match rate.
+- **Core Tech Stack:** 'Gemini API', 'Embeddings', 'Next.js', 'React', 'TypeScript', 'Cosine Similarity', 'LangChain', 'Firebase', 'Groq API'
+- **AI & ATS:** 3-layer hybrid ATS scoring combining rule-based analysis, Gemini multimodal evaluation, keyword matching, and semantic similarity.
+- **Embeddings & Semantic Matching:** Uses Gemini text-embedding-004 embeddings with cosine similarity for semantic resume-job description matching and exact/semantic keyword categorization.
+- **LangChain & AI Orchestration:** Uses LangChain DynamicTools for keyword extraction, semantic similarity, resume-section analysis, and optimization recommendations, with Gemini → Groq fallback.
+- **Optimization:** AI resume enhancement, semantic keyword analysis, cover-letter generation, Firebase Auth & Firestore, and PDF/DOCX/TXT resume export.
+
 </details>
 
 <details>
@@ -254,11 +306,14 @@ An optimized security tool generating robust, custom-length passwords utilizing 
 ## 💼 Work Experience
 
 #### **Data Auditor / AI Data Annotation Auditor** | Process Associate
-**Handigital Private Limited** | May*2026* - *Ongoing*
-*   Audited unstructured text, conversational queries, and tabular datasets to train generative AI models.
-*   Conducted rigorous quality control reviews on annotated data to ensure high fidelity and alignment with project benchmarks.
-*   Analyzed annotation label definitions and collaborated with operations to boost team annotation throughput metrics by 15%.
-*   Refined prompt-response pairs to optimize instruction-following capabilities of state-of-the-art LLMs.
+**Han Digital Solution Pvt.Ltd.** | May 2026 - Ongoing
+*Remote | Amazon Client Project*
+
+- Executed RLHF-based data-quality workflows for a high-stakes text-classification ecosystem, driving Human-in-the-Loop (HITL) safety and model alignment through structured annotation and evaluation.
+- Led complex text annotation and classification workflows by identifying harmful and harmless content and applying granular 1-to-5 severity ratings to support AI safety guardrails and RLHF-based LLM training.
+- Annotated and validated 6,000+ multilingual, multimodal AI data, supporting AI model training and evaluation and audited 4,000+ AI annotation and evaluation tasks for accuracy, consistency, and guideline compliance, achieving a 95% audit quality score and resolving ambiguous and complex edge cases.
+- Implemented quality-assurance standards and confidence-thresholding workflows to isolate out-of-distribution content anomalies and mitigate model hallucination risks, accelerating manual auditing cycles while maintaining 99.8% compliance and classification accuracy across thousands of documents.
+- Supported multilingual AI Safety and Guardrails operations through detailed content review, quality checks, and policy-based decision-making across multimodal data.
 
 #### **AI Developer Intern** | Infosys Springboard 7.0 Project
 **Infosys Springboard** | June*2026*- Sep*2026*
