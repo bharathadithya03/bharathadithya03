@@ -102,12 +102,6 @@ An ambitious and results-driven **Artificial Intelligence and Machine Learning E
     </td>
   </tr>
   <tr>
-    <td align="center"><b>Databases</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
     <td align="center"><b>DevOps & Tools</b></td>
     <td>
       <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
